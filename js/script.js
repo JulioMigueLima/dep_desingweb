@@ -1,15 +1,25 @@
-alert ('oi Betinha');
+var nome = "Julio";
 
+let nasc = 2008;
 
-var num = parseFloat(prompt("Digite um valor betinha:"));
+const viva = confirm("Clique ok, se estiver viva");
 
-if (num == 0){
-    alert(`${num} é zero`);}
+let altura;
 
-else if (num %2 != 0){
-    alert(`${num} é impar`);
-}
+function calcIdade (ano = 2026) {
+  let idade=ano - nasc;
+  console.log (`Idade dentro da funcao: ${idade}`);
+  return idade;
 
-else{
-    alert(`${num} é par`);
+;}
+
+alert (`Idadde fora da função: ${calcIdade()}`);
+
+/* console.log(`Idade fora da funcao: ${idade}`); 
+             vai da erro
+*/
+
+if (viva){
+
+    altura=prompt("Digite sua altura beta: ")
 }
